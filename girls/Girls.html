@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/producthome.css">
+   <title>Girls |blkenWear</title>
+        <link rel="icon" href="https://raw.githubusercontent.com/blkenWear/blkenWearlogo/main/390765600d563047b5ff2eea572cafc1-removebg-preview.png" type="image/png">
+
+   <style>
+      .product {
+         max-width: calc(50% - 50px);
+      }
+      .product img {
+         max-width: 100%;
+         height: 500px;
+      }
+            .product-grid {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         gap: 10px;
+         padding: 10px;
+         margin: 0 auto;
+         max-width: 1000px;
+         margin-top:20px;
+      }
+      .new-seller img {
+            width: 290px;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+             h2 {
+            color: #333; /* Text color */
+            text-align: center; /* Center the text */
+            text-transform: uppercase; /* Convert text to uppercase */
+            margin-top:-10px;
+        }
+        .carousel{
+        margin-top:20px;
+        }
+
+   </style>
+</head>
+<body>
+<header>
+    <link rel="stylesheet" href="../css/hierarchy.css">
+      <nav>
+
+        <ul>
+            <li>
+        <a href="../home/home.html">Home</a>
+      </li>
+      <li>
+        <a href="../men/Men.html">Men</a>
+        <ul>
+          <li><a href="../men/menstshirt.html">T-Shirt</a></li>
+          <li><a href="../men/menshoodies.html">Hoodies</a></li>
+            <li><a href="../men/mensoversizedtshirt.html">Oversized T-shirt</a></li>
+            <li><a href="../men/Menspolotshirt.html">Polo T-shirt</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../women/Women.html">Women</a>
+        <ul>
+          <li><a href="../women/womenstshirt.html">T-Shirt</a></li>
+          <li><a href="../women/womenscrophoodies.html">Hoodies</a></li>
+            <li><a href="../women/womenscroptop.html">Crop Top</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="../boys/Boys.html">Boys</a>
+        <ul>
+          <li><a href="../boys/boystshirt.html">T-Shirt</a></li>
+          <li><a href="../boys/boystoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../girls/Girls.html">Girls</a>
+        <ul>
+          <li><a href="../girls/girlstshirt.html">T-Shirt</a></li>
+          <li><a href="../girls/girlstoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../newseller/newseller.html">New Sellers</a>
+          <ul>
+          <li><a href="../newseller/sneakers.html">Sneaker</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../cart/cart.html?id=product1">Cart</a>
+      </li>
+      <div class="slider"></div>
+    </ul>
+      </nav>
+      <a href="../home/home.html">
+        <img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Your Logo" width="100" height="100">
+    </a>
+    </header>
+<div class="product-hierarchy">
+          <a href="../home/home.html">Home</a>
+          <span>&gt;</span>
+  <a href="../girls/Girls.html">Girls</a>
+
+</div>
+<!-- Add the custom product section here -->
+<div class="carousel">
+      <div class="image-container" id="images">
+        <img
+          src="https://i.pinimg.com/564x/d3/e9/61/d3e9619c5698eb16c0c25a6cce530f4f.jpg"
+          alt="first-image"  width ="800",
+  height ="667";
+        />
+        <img
+          src="https://i.pinimg.com/564x/47/46/e4/4746e4d09d9229a2a10448aad41f0607.jpg"
+          alt="second-image"  width ="800",
+  height ="625"
+        />
+        <img
+          src="https://i.pinimg.com/564x/e9/0b/65/e90b6595ab147a2aa7928c705b8a3398.jpg"
+          alt="third-image"  width ="800",
+  height ="592"
+        />
+        <img
+          src="https://i.pinimg.com/564x/e0/5a/7e/e05a7e35a2b6ddac621674070763c757.jpg"
+          alt="fourth-image"  width ="650",
+  height ="850"
+        />
+      </div>
+
+    <script>
+        const images = document.getElementById("images");
+const leftButton = document.getElementById("left");
+const rightButton = document.getElementById("right");
+
+const imagesList = document.querySelectorAll("#images img");
+let index = 0;
+
+const changeImage = () => {
+  if (index > imagesList.length - 1) index = 0;
+  else if (index < 0) index = imagesList.length - 1;
+  images.style.transform = `translateX(${-index * 500}px)`;
+};
+
+const run = () => {
+  index++;
+  changeImage();
+};
+
+const resetInterval = () => {
+  clearInterval(interval);
+  interval = setInterval(run, 2000);
+};
+
+let interval = setInterval(run, 2000);
+
+rightButton.addEventListener("click", () => {
+  index++;
+  changeImage();
+  resetInterval();
+});
+
+leftButton.addEventListener("click", () => {
+  index--;
+  changeImage();
+  resetInterval();
+});
+
+    </script>
+    </div>
+  <div class="explore-container">
+    <p>Discover our latest arrivals and best deals from new sellers. Explore a wide range of products that suit your style.</p>
+    <a href="../newseller/newseller.html" class="explore-button">Explore Now</a>
+  </div>
+<div class="product-grid">
+  <!-- Include this script on menstshirt.html -->
+  <div class="product" id="product1">
+      <a href="girlstoddlertshirt.html?id=product3">
+         <img src="https://img.freepik.com/free-photo/funny-charming-little-girl-with-long-wavy-hair-dressed-white-tshirt-is-having-fun-home-dancing-smiling_291650-2352.jpg?w=360&t=st=1699531119~exp=1699531719~hmac=38e9198a89bc2c6e6478dde4d76ca5b80a635b372b3ccb651c471adf00fbf46c" alt="Product 3" >
+         <h3>Toddler T-Shirt</h3>
+      </a>
+   </div>
+   <!-- Product 4 -->
+   <div class="product" id="product2">
+      <a href="girlstoddlertshirt.html?id=product4">
+         <img src="https://img.freepik.com/free-photo/young-girl-holding-her-skateboard-outside_23-2148617498.jpg?w=360&t=st=1699531179~exp=1699531779~hmac=f4b7f292b5f18641d839e791709efe0558d6ee78c062ba2471a6455130c66365" alt="Product 4">
+         <h3>T-Shirt</h3>
+      </a>
+   </div>
+   <!-- Product 3 -->
+
+
+   <!-- Add more product entries with unique IDs as needed -->
+</div>
+
+<footer>
+    <div class="footer-content">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="..home/home.html"><img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Logo" width="100" height="100"></a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact">
+            <span class="contact-details">Customer Care: +1 (123) 456-7890</span>
+            <span class="separator">|</span>
+            <a href="mailto:blkenWear@gmail.com" class="contact-details">blkenWear@gmail.com</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

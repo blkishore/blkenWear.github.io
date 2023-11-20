@@ -1,0 +1,450 @@
+/*
+
+@Programith
+
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    background-size: cover;
+    font: 14px/20px "Lato", Arial, sans-serif;
+    color: #9e9e9e;
+    margin-top: -20px;
+}
+
+.slide-container {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    margin-top:-20px;
+
+}
+
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.wrapper:focus {
+    outline: 0;
+}
+
+.clash-card {
+    background: white;
+    width: 400px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+
+}
+
+.clash-card__image {
+    position: relative;
+    height: 230px;
+
+    margin-bottom: 35px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 14px;
+}
+
+.clash-card__image--barbarian {
+    background: url("https://i.pinimg.com/564x/1c/36/0a/1c360af4b4ad0ca8c62b850129023130.jpg");
+}
+.clash-card__image--barbarian img {
+    width: 400px;
+    position: absolute;
+    top: -35px;
+
+
+}
+
+.clash-card__image--archer {
+    background: url("https://raw.githubusercontent.com/Programith/Images/main/archer-bg.jpg");
+}
+.clash-card__image--archer img {
+    width: 400px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+}
+
+.clash-card__image--giant {
+    background: url("https://raw.githubusercontent.com/Programith/Images/main/giant-bg.jpg");
+}
+.clash-card__image--giant img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+}
+
+.clash-card__image--goblin {
+    background: url("https://raw.githubusercontent.com/Programith/Images/main/goblin-bg.jpg");
+}
+.clash-card__image--goblin img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+}
+
+.clash-card__image--wizard {
+    background: url("https://raw.githubusercontent.com/Programith/Images/main/wizard-bg.jpg");
+}
+.clash-card__image--wizard img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+}
+
+.clash-card__level {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+    color: #ec9b3b;
+}
+
+.clash-card__level--archer {
+    color: #ee5487;
+}
+
+.clash-card__level--giant {
+    color: #f6901a;
+}
+
+.clash-card__level--goblin {
+    color: #82bb30;
+}
+
+.clash-card__level--wizard {
+    color: #4facff;
+}
+
+.clash-card__unit-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+    background: #ec9b3b;
+}
+.clash-card__unit-stats--barbarian .one-third {
+    border-right: 1px solid #bd7c2f;
+}
+
+.clash-card__unit-stats--archer {
+    background: #ee5487;
+}
+.clash-card__unit-stats--archer .one-third {
+    border-right: 1px solid #d04976;
+}
+
+.clash-card__unit-stats--giant {
+    background: #f6901a;
+}
+.clash-card__unit-stats--giant .one-third {
+    border-right: 1px solid #de7b09;
+}
+
+.clash-card__unit-stats--goblin {
+    background: #82bb30;
+}
+.clash-card__unit-stats--goblin .one-third {
+    border-right: 1px solid #71a32a;
+}
+
+.clash-card__unit-stats--wizard {
+    background: #4facff;
+}
+.clash-card__unit-stats--wizard .one-third {
+    border-right: 1px solid #309eff;
+}
+
+.clash-card__unit-stats {
+    color: white;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.clash-card__unit-stats .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+}
+.clash-card__unit-stats sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+}
+.clash-card__unit-stats .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.clash-card__unit-stats .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.clash-card__unit-stats .no-border {
+    border-right: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+
+}
+
+.slick-prev {
+    left: 100px;
+    z-index: 999;
+}
+
+.slick-next {
+    right: 100px;
+    z-index: 999;
+}
+/*
+
+@Programith
+
+*/
+
+@import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+
+body1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    transition: 0.25s;
+    color: #9e9e9e;
+    margin-height:100px;
+}
+
+body1 .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 600px;
+    max-width: 900px;
+    width: calc(100% - 100px);
+    height: 400px;
+}
+
+body1 .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+}
+
+.option:nth-child(1) {
+    --defaultBackground: #ed5565;
+}
+.option:nth-child(2) {
+    --defaultBackground: #fc6e51;
+}
+.option:nth-child(3) {
+    --defaultBackground: #ffce54;
+}
+.option:nth-child(4) {
+    --defaultBackground: #2ecc71;
+}
+.option:nth-child(5) {
+    --defaultBackground: #5d9cec;
+}
+.option:nth-child(6) {
+    --defaultBackground: #ac92ec;
+}
+
+.option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+}
+
+.option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+.option.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+}
+.option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+.option:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 0;
+}
+
+.label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--defaultBackground);
+
+}
+.icon img {
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+/* Basic styling for the one-third container */
+.one-third {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for the stat value */
+.stat-value {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Add a cursor to indicate interactivity */
+    transition: text-decoration 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+/* Hover effect for the link */
+.stat-value:hover {
+    text-decoration: underline;
+    /* Adjust other styles if needed, but avoid changing padding or margins */
+}
+
+/* Styling for the stat number */
+.stat {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Basic styling for the one-third container */
+/* Basic styling for the one-third container */
+.one-third {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for the stat value */
+.stat-value {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Add a cursor to indicate interactivity */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+
+/* Hover effect for the link */
+.stat-value:hover {
+    transform: translateY(-5px);
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 18px; /* Increase font size on hover */
+    /* Add more styling for the hover effect if needed */
+}
+
+/* Styling for the stat number */
+.stat {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.stat-value-explore {
+    transform: translateY(-5px);
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 18px; /* Increase font size on hover */
+    color: #ff0000; /* Replace #ff0000 with your desired color code */
+
+    /* Add more styling for the hover effect if needed */
+}
+/* Hover effect for the link */
+.stat-value-explore:hover {
+    transform: translateY(-5px);
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 20px; /* Increase font size on hover */
+    /* Add more styling for the hover effect if needed */
+}
+
+.stat-value-explore {
+    display: block;
+
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Add a cursor to indicate interactivity */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+

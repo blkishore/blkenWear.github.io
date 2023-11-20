@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../css/producthome.css">
+        <link rel="stylesheet" href="../css/hierarchy.css">
+        <link rel="icon" href="https://raw.githubusercontent.com/blkenWear/blkenWearlogo/main/390765600d563047b5ff2eea572cafc1-removebg-preview.png" type="image/png">
+
+   <title>Men|blkenWear</title>
+</head>
+<style>
+          .new-seller img {
+         width: 300px;
+         height: 400px;
+         border: 1px solid #ccc;
+         margin-top:-10px;
+      }
+             h2 {
+            color: #333; /* Text color */
+            text-align: center; /* Center the text */
+            text-transform: uppercase; /* Convert text to uppercase */
+            margin-top:-10px;
+        }
+       .carousel{
+        margin-top:20px;
+        }
+</style>
+<body>
+<header>
+      <nav>
+
+        <ul>
+            <li>
+        <a href="../home/home.html">Home</a>
+      </li>
+      <li>
+        <a href="../men/Men.html">Men</a>
+        <ul>
+          <li><a href="../men/menstshirt.html">T-Shirt</a></li>
+          <li><a href="../men/menshoodies.html">Hoodies</a></li>
+            <li><a href="../men/mensoversizedtshirt.html">Oversized T-shirt</a></li>
+            <li><a href="../men/Menspolotshirts.html">Polo T-shirt</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../women/Women.html">Women</a>
+        <ul>
+          <li><a href="../women/womenstshirt.html">T-Shirt</a></li>
+          <li><a href="../women/womenscrophoodies.html">Hoodies</a></li>
+            <li><a href="../women/womenscroptop.html">Crop Top</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="../boys/Boys.html">Boys</a>
+        <ul>
+          <li><a href="../boys/boystshirt.html">T-Shirt</a></li>
+          <li><a href="../boys/boystoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../girls/Girls.html">Girls</a>
+        <ul>
+          <li><a href="../girls/girlstshirt.html">T-Shirt</a></li>
+          <li><a href="../girls/girlstoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../newseller/newseller.html">New Sellers</a>
+          <ul>
+          <li><a href="../newseller/sneakers.html">Sneaker</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../cart/cart.html?id=product1">Cart</a>
+      </li>
+      <div class="slider"></div>
+    </ul>
+      </nav>
+      <a href="../home/home.html">
+        <img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Your Logo" width="100" height="100">
+    </a>
+    </header>
+<div class="product-hierarchy">
+          <a href="../home/home.html">Home</a>
+          <span>&gt;</span>
+  <a href="../men/Men.html">Men</a>
+
+</div>
+
+<div class="carousel">
+      <div class="image-container" id="images">
+        <img
+          src="https://i.pinimg.com/736x/a8/7a/39/a87a39f044f30ec563e047e10c12486d.jpg"
+          alt="first-image"  width ="900",
+  height ="668";
+        />
+        <img
+          src="https://i.pinimg.com/564x/fa/01/38/fa0138dee5f6526e7d368ba13c914cb4.jpg"
+          alt="second-image"  width ="800",
+  height ="699"
+        />
+        <img
+          src="https://i.pinimg.com/564x/d1/3a/a8/d13aa899232c875155175d9293bda76b.jpg"
+          alt="third-image"  width ="800",
+  height ="678"
+        />
+        <img
+          src="https://i.pinimg.com/564x/44/59/b8/4459b87ca699676d055e77c6039d4d6f.jpg"
+          alt="fourth-image"  width ="650",
+  height ="850"
+        />
+      </div>
+
+    <script>
+        const images = document.getElementById("images");
+const leftButton = document.getElementById("left");
+const rightButton = document.getElementById("right");
+
+const imagesList = document.querySelectorAll("#images img");
+let index = 0;
+
+const changeImage = () => {
+  if (index > imagesList.length - 1) index = 0;
+  else if (index < 0) index = imagesList.length - 1;
+  images.style.transform = `translateX(${-index * 500}px)`;
+};
+
+const run = () => {
+  index++;
+  changeImage();
+};
+
+const resetInterval = () => {
+  clearInterval(interval);
+  interval = setInterval(run, 2000);
+};
+
+let interval = setInterval(run, 2000);
+
+rightButton.addEventListener("click", () => {
+  index++;
+  changeImage();
+  resetInterval();
+});
+
+leftButton.addEventListener("click", () => {
+  index--;
+  changeImage();
+  resetInterval();
+});
+
+    </script>
+    </div>
+  <div class="explore-container">
+    <p>Discover our latest arrivals and best deals from new sellers. Explore a wide range of products that suit your style.</p>
+    <a href="../newseller/newseller.html" class="explore-button">Explore Now</a>
+  </div>
+
+<div class="product-grid">
+  <!-- Include this script on menstshirt.html -->
+  <div class="product" id="product1">
+      <a href="menstshirt.html?id=product3">
+         <img src="https://img.freepik.com/free-photo/stylish-casual-indian-man-wear-blue-tshirt-posing-against-grey-wall_627829-4727.jpg?w=996&t=st=1699071771~exp=1699072371~hmac=38b88139af5231ee2014e7cfcccc3861e7f4d788f14a63899d55d405f419a9db" alt="Product 3">
+         <h3>T-Shirt</h3>
+      </a>
+   </div>
+   <!-- Product 4 -->
+   <div class="product" id="product2">
+      <a href="mensoversizedtshirt.html?id=product4">
+         <img src="https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-model-sexy-man-dressed-size-tshirt-jeans-fashion-male-isolated-studio-posing-near-white-wall_158538-26370.jpg?w=996&t=st=1699095244~exp=1699095844~hmac=d0b709822e7e60379befd18f1b6596b15205fa2fb1930377ba826d231c8831b3" alt="Product 4">
+         <h3>Over Sized T-Shirt</h3>
+      </a>
+   </div>
+   <!-- Product 3 -->
+   <div class="product" id="product3">
+      <a href="menshoodies.html?id=product3">
+         <img src="https://img.freepik.com/free-photo/front-view-young-man-with-christmas-toys-red-wall_140725-56271.jpg?w=996&t=st=1699071903~exp=1699072503~hmac=1c82b3c1d58885fe819d280afcbb9d0d54ed7ba732007bfe206d09fe906bce51" alt="Product 3">
+         <h3>Hoodies</h3>
+      </a>
+   </div>
+   <!-- Product 4 -->
+   <div class="product" id="product4">
+      <a href="Menspolotshirts.html?id=product4">
+         <img src="https://img.freepik.com/free-photo/young-smiling-man-red-shirt-with-optical-glasses-points-himself-isolated-orange-wall_141793-35496.jpg?w=900&t=st=1699072094~exp=1699072694~hmac=878451d1de2bd77cebbe211b09a04d29feb57aaf7c2567eda821fee0ca8e72cb" alt="Product 4">
+         <h3>Polo T-Shirts</h3>
+      </a>
+   </div>
+   <!-- Add more product entries with unique IDs as needed -->
+</div>
+
+<footer>
+    <div class="footer-content">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../home/home.html"><img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Logo" width="100" height="100"></a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact">
+            <span class="contact-details">Customer Care: +1 (123) 456-7890</span>
+            <span class="separator">|</span>
+            <a href="mailto:blkenWear@gmail.com" class="contact-details">blkenWear@gmail.com</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

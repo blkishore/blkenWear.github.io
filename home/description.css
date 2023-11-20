@@ -1,0 +1,514 @@
+                                         /* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+                                                   /* Navigation bar styles */
+.navbar {
+    background-color: #CD853F;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%; /* Set width to 100% for full width */
+}
+
+.navbar-search button {
+    background-color: #febd69;
+    color: #232f3e;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar-user a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+                                             /* Product Grid styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+                                        /* Enlarge the product box on hover */
+.product-details:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+                                          /* Make the entire product box a clickable link */
+.product a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.product-details {
+    max-width: 800px;
+    margin: 20px auto; /* Center horizontally by setting left and right margins to auto */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text horizontally */
+    transform: scale(1.05); /* Enlarge on hover */
+}
+p.product-details:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+
+
+.product-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-details .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.product-details button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product-details button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+                                                                             /* Styles for the text container */
+        .text-container {
+            text-align: center; /* Center-align the text */
+            margin-bottom: 0px; /* Add some space between text and sections */
+            margin-top: 25px;
+        }
+
+                               /* Styles for the text labels with increased spacing */
+        .text-label {
+            display: inline-block; /* Display text labels side by side */
+            margin: 0 120px; /* Add more space between text labels (adjust as needed) */
+            font-size: 18px;
+            color: #8B4513; /* Text color */
+            font-weight: bold; /* Bold text */
+        }
+
+
+                                               /* new seller design*/
+p.new-seller {
+    background-image: linear-gradient(45deg, #DEB887, #FFE4B5); /* Gradient background */
+    color: #A52A2A; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    animation: pulse 1.5s infinite; /* Animation */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+p.new-seller {
+    background-color: #3498db; /* Background color */
+    color: #8B4513; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+p.new-seller:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+                                               /* Style the product description-above colur choose */
+/* Style the product description */
+.product-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444; /* Text color */
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Add a background color and padding for a nice container effect */
+.product-description-container {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a subtle text shadow for better visibility */
+.product-description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+
+                                             /*descript of product css*/
+
+
+/* Reset some default styles */
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles */
+.navbar {
+   background-color: #CD853F;
+   color: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 10px;
+   height: 50px;
+}
+
+.navbar-links a {
+   color: #ffffff;
+   text-decoration: none;
+   margin-right: 20px;
+}
+
+.navbar-user a {
+   color: #ffffff;
+   text-decoration: none;
+   margin-right: 10px;
+}
+
+/* Product details container styles */
+.product-details-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.product-details {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+   max-width: 500px;
+   height: 500px;
+   margin-bottom: -90px; /* Reduce the margin here */
+}
+
+.product-text h3 {
+   color: #e74c3c;
+   font-size: 24px;
+   margin-bottom: 5px; /* Reduce the margin here */
+}
+
+.product-description {
+   font-size: 16px;
+   margin-bottom: 5px; /* Reduce the margin here */
+}
+
+.price {
+   font-weight: bold;
+   color: #CD853F;
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.add-to-bag {
+   background-color: #3498db;
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   font-weight: bold;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+}
+
+.add-to-bag:hover {
+   background-color: #2980b9;
+}
+
+
+                                                 /* Enlarge the product box on hover */
+.product:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+                                                /* Style for the color options container */
+/* Style the color circles */
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid #fff; /* Add border for contrast */
+  list-style: none; /* Add this line to remove any list-style (such as bullets) */
+  margin-top=-10px;
+}
+
+/* Define colors for the circles */
+.color-circle.orange {
+  background-color: orange;
+}
+
+.color-circle.grey {
+  background-color: grey;
+}
+
+.color-circle.blue {
+  background-color: blue;
+}
+.color-circle.red {
+   background-color: red; /* Set the background color to red */
+}
+
+.color-circle.yellow {
+   background-color: yellow; /* Set the background color to yellow */
+}
+
+.color-circle.grey {
+   background-color: grey; /* Set the background color to grey */
+}
+
+/* Add more color-circle classes and corresponding background colors as needed */
+
+                                              /* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Adjust padding as needed */
+     width: 100%; /* Set width to 100% for full width */
+}
+
+/* Center the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust max width as needed */
+    margin: 0 auto; /* Center the footer horizontally */
+    padding: 0 20px; /* Add horizontal padding as needed */
+
+}
+
+/* CSS for the logo */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* CSS for the contact information */
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between elements */
+}
+
+.contact-details {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.separator {
+    color: #fff;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Center the entire content and allow it to scroll */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+                                     /* Style the product details container */
+.product-details {
+  margin-top: 20px; /* Adjust the top and bottom margin as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  border: 1px solid #ddd; /* Add a border for separation */
+  border-radius: 5px;
+}
+
+/* Style the product title */
+.product-details h3 {
+  font-size: 18px;
+  margin: 0; /* Remove top and bottom margin for the title */
+}
+
+/* Style the product image */
+.product-details #product-image-container-product1 img {
+  width: 400px; /* Ensure the image doesn't exceed the container width */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+
+}
+
+
+
+/* Style the product description */
+.product-details .product-description {
+  margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+
+
+                                           /* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Adjust padding as needed */
+     width: 100%; /* Set width to 100% for full width */
+}
+
+/* Center the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust max width as needed */
+    margin: 0 auto; /* Center the footer horizontally */
+    padding: 0 20px; /* Add horizontal padding as needed */
+
+}
+
+/* CSS for the logo */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* CSS for the contact information */
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between elements */
+}
+
+.contact-details {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.separator {
+    color: #fff;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Center the entire content and allow it to scroll */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+
+                                                /*right side*/

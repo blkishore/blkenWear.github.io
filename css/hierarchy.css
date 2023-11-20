@@ -1,0 +1,30 @@
+.product-hierarchy {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333; /* Change text color to a softer tone */
+  display: flex; /* Use flexbox for better layout control */
+  align-items: center; /* Vertically align items */
+  margin-top:30px;
+  margin-left:20px;
+
+}
+
+.product-hierarchy a {
+  text-decoration: none;
+   color: #DCDCDC; /* Set the link color to white or any color you prefer */
+  text-transform: capitalize;
+  transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and font size changes */
+}
+
+.product-hierarchy a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  color: #FFFFFF; /* Darken the link color on hover */
+  font-size: 18px;
+}
+
+.product-hierarchy span {
+  margin: 0 5px;
+  color: #FFFFFF; /* Adjust the separator color to a darker tone */
+}
+
+

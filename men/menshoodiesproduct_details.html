@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/products.css">
+         <link rel="stylesheet" href="../css/hierarchy.css">
+        <link rel="icon" href="https://raw.githubusercontent.com/blkenWear/blkenWearlogo/main/390765600d563047b5ff2eea572cafc1-removebg-preview.png" type="image/png">
+
+    <title>Description|blkenWear</title>
+
+</head>
+<header>
+      <nav>
+
+        <ul>
+            <li>
+        <a href="../home/home.html">Home</a>
+      </li>
+      <li>
+        <a href="../men/Men.html">Men</a>
+        <ul>
+          <li><a href="../men/menstshirt.html">T-Shirt</a></li>
+          <li><a href="../men/menshoodies.html">Hoodies</a></li>
+            <li><a href="../men/mensoversizedtshirt.html">Oversized T-shirt</a></li>
+            <li><a href="../men/Menspolotshirts.html">Polo T-shirt</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../women/Women.html">Women</a>
+        <ul>
+          <li><a href="../women/womenstshirt.html">T-Shirt</a></li>
+          <li><a href="../women/womenscrophoodies.html">Hoodies</a></li>
+            <li><a href="../women/womenscroptop.html">Crop Top</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="../boys/Boys.html">Boys</a>
+        <ul>
+          <li><a href="../boys/boystshirt.html">T-Shirt</a></li>
+          <li><a href="../boys/boystoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../girls/Girls.html">Girls</a>
+        <ul>
+          <li><a href="../girls/girlstshirt.html">T-Shirt</a></li>
+          <li><a href="../girls/girlstoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../newseller/newseller.html">New Sellers</a>
+          <ul>
+          <li><a href="../newseller/sneakers.html">Sneaker</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../cart/cart.html?id=product1">Cart</a>
+      </li>
+      <div class="slider"></div>
+    </ul>
+      </nav>
+      <a href="../home/home.html">
+        <img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Your Logo" width="100" height="100">
+    </a>
+    </header>
+<div class="product-hierarchy">
+          <a href="../home/home.html">Home</a>
+          <span>&gt;</span>
+  <a href="../men/Men.html">Men</a>
+                  <span>&gt;</span>
+  <a href="../men/menshoodies.html">Hoodies</a>
+    <span>&gt;</span>
+  <a href="../men/menshoodiesproduct_details.html">Hoodies Designs</a>
+</div>
+  <style>
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    color: #333;
+    padding-bottom: 60px; /* Adjust the padding as needed to create space above the footer */
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: #CD853F;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+}
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.navbar-user a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+/* Center the products container */
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Adjust top and bottom padding as needed */
+}
+
+/* Container for products */
+.products-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between products */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    justify-content: center; /* Center the products in the container */
+}
+
+/* Product styles */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Adjust the width of each product as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+background-color: #343c42;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+.product select {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.product button {
+    padding: 12px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.product button:hover {
+    background-color: #d93134;
+}
+
+body {
+    padding-bottom: 70px; /* Adjust the padding as needed to create space above the footer */
+    background-color: #1e272e;
+}
+/* Footer styles */
+      footer {
+         background-color: #333;
+         color: #fff;
+         padding: 10px 0;
+         width: 100%;
+         position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom */
+    height: 80px;
+
+      }
+
+      .footer-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+
+      .logo img {
+         width: 100px;
+         height: auto;
+         margin-top:10px;
+      }
+
+      .contact {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .contact-details {
+         color: #fff;
+         text-decoration: none;
+         font-size: 16px;
+      }
+
+      .separator {
+         color: #fff;
+         font-size: 16px;
+      }
+.hidden-footer {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+a.view-cart {
+    display: block;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+a.view-cart:hover {
+    background-color: #e0e0e0;
+    color: #111;
+}
+h2 {
+  color: #F5F5F5;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Arial", sans-serif;
+}
+  </style>
+<body>
+<div class="products-wrapper">
+    <div class="products-container">
+    <div class="product" id="product1">
+        <img id="product1-image-Cold Coffee Golden Yellow" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Coldcoffee_Golden_Yellow_M_Hoodie.jpg" alt="Product 1 Blue">
+        <img id="product1-image-Cold Coffee Maroon" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/coldcoffee-Maroon_M_Hoodie.jpg" alt="Product 1 Red" style="display: none;">
+        <!-- Add other images for Product 1 based on available colors -->
+
+        <h2>Cold Coffee</h2>
+        <label for="product1-size">Select Size:</label>
+        <select id="product1-size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        <label for="product1-color">Select Color:</label>
+        <select id="product1-color" onchange="changeProductImage('product1')">
+            <option value="Cold Coffee Golden Yellow">Golden Yellow</option>
+            <option value="Cold Coffee Maroon">Maroon</option>
+            <!-- Add other available colors for Product 1 -->
+        </select>
+        <p style="color: #F5F5F5;">Price: $10.99</p>
+        <button onclick="addToCart('Cold Coffee', 'product1-size', 'product1-color', 10.99)">Add to Cart</button>
+    </div>
+
+    <!-- Repeat the structure for other products with their respective images -->
+    <!-- Example structure for Product 2 with 2 colors -->
+    <div class="product" id="product2">
+        <img id="product2-image-Devil Maroon" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Devil-Maroon_M_Hoodie.jpg" alt="Product 2 Red1">
+        <img id="product2-image-Devil Mint Green" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Devil-Mint_Green_M_Hoodie.jpg" alt="Product 2 Red" style="display: none;">
+
+        <h2>Devil</h2>
+        <label for="product2-size">Select Size:</label>
+        <select id="product2-size">
+            <option value="Small">Small</option>
+            <option value="Large">Large</option>
+        </select>
+        <label for="product2-color">Select Color:</label>
+        <select id="product2-color" onchange="changeProductImage('product2')">
+            <option value="Devil Maroon">Maroon</option>
+            <option value="Devil Mint Green">Mint Green</option>
+            <!-- Add other available colors for Product 2 -->
+        </select>
+        <p style="color: #F5F5F5;">Price: $15.99</p>
+        <button onclick="addToCart('Devil', 'product2-size', 'product2-color', 15.99)">Add to Cart</button>
+    </div>
+    <div class="product" id="product3">
+        <img id="product3-image-Hammer Baby Blue" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Hammer-Baby_Blue_M_Hoodie.jpg" alt="Product 3 pandalavender">
+        <img id="product3-image-Hammer Olive Green" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Hammer-Olive_Green_M_Hoodie.jpg" alt="Product 3 pandaRed" style="display: none;">
+        <!-- Add other images for Product 1 based on available colors -->
+
+        <h2>Thor Hammer</h2>
+        <label for="product3-size">Select Size:</label>
+        <select id="product3-size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        <label for="product3-color">Select Color:</label>
+        <select id="product3-color" onchange="changeProductImage('product3')">
+            <option value="Hammer Baby Blue">Baby Blue</option>
+            <option value="Hammer Olive Green">Olive Green</option>
+            <!-- Add other available colors for Product 1 -->
+        </select>
+        <p style="color: #F5F5F5;">Price: $15.99</p>
+        <button onclick="addToCart('Thor Hammer', 'product3-size', 'product3-color', 15.99)">Add to Cart</button>
+    </div>
+    <div class="product" id="product4">
+        <img id="product4-image-TheSim Melange Grey" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/TheSims-Melange_Grey_M_Hoodie.jpg" alt="Product 3 pandalavender">
+        <img id="product4-image-TheSims Olive Green" src="https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Thesims-Olive_Green_M_Hoodie.jpg" alt="Product 3 pandaRed" style="display: none;">
+        <!-- Add other images for Product 1 based on available colors -->
+
+        <h2>Simplen</h2>
+        <label for="product4-size">Select Size:</label>
+        <select id="product4-size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        <label for="product4-color">Select Color:</label>
+        <select id="product4-color" onchange="changeProductImage('product4')">
+            <option value="TheSim Melange Grey">Melange Grey</option>
+            <option value="TheSims Olive Green">Olive Green</option>
+            <!-- Add other available colors for Product 1 -->
+        </select>
+        <p style="color: #F5F5F5;">Price: $19.99</p>
+        <button onclick="addToCart('Simplen', 'product4-size', 'product4-color', 19.99)">Add to Cart</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function changeProductImage(productId) {
+    const selectedColor = document.getElementById(productId + '-color').value.toLowerCase();
+    const productImages = document.querySelectorAll('#' + productId + ' img');
+
+    productImages.forEach(image => {
+        if (image.id.includes(productId + '-image-') && image.id.toLowerCase().includes(selectedColor)) {
+            image.style.display = 'inline';
+        } else {
+            image.style.display = 'none';
+        }
+    });
+}
+
+// Remove from cart function
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCart();
+}
+
+
+function displayCart() {
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartContainer = document.getElementById('cart-items');
+    let total = 0;
+
+    cartContainer.innerHTML = '';
+    cartItems.forEach((item, index) => {
+        total += item.price;
+        cartContainer.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.image}" alt="${item.name} image">
+                <h3>${item.name}</h3>
+                <p>Size: ${item.size}</p>
+                <p>Color: ${item.color}</p>
+                <p>Price: $${item.price}</p>
+                <button onclick="removeFromCart(${index})">Remove from Cart</button>
+            </div>
+        `;
+    });
+
+    document.getElementById('total').innerText = `Total: $${total.toFixed(2)}`;
+}
+
+displayCart();
+
+function addToCart(name, sizeId, colorId, price) {
+    const selectedSize = document.getElementById(sizeId).value;
+    const selectedColor = document.getElementById(colorId).value;
+    let imageUrl;
+
+    // Set the image URL based on the selected color
+    if (selectedColor === 'Cold Coffee Golden Yellow') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Coldcoffee_Golden_Yellow_M_Hoodie.jpg';
+    } else if (selectedColor === 'Cold Coffee Maroon') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/coldcoffee-Maroon_M_Hoodie.jpg';
+    }else if (selectedColor === 'Devil Maroon') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Devil-Maroon_M_Hoodie.jpg';
+    }else if (selectedColor === 'Devil Mint Green') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Devil-Mint_Green_M_Hoodie.jpg';
+    }else if (selectedColor === 'Hammer Baby Blue') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Hammer-Baby_Blue_M_Hoodie.jpg';
+    }else if (selectedColor === 'Hammer Olive Green') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Hammer-Olive_Green_M_Hoodie.jpg';
+    }else if (selectedColor === 'TheSim Melange Grey') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/TheSims-Melange_Grey_M_Hoodie.jpg';
+    }else if (selectedColor === 'TheSims Olive Green') {
+        imageUrl = 'https://raw.githubusercontent.com/blkenWear/mens_hoodies_designs/main/Thesims-Olive_Green_M_Hoodie.jpg';
+    }
+    // Add more conditions for different colors if needed
+
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const item = {
+        name: name,
+        size: selectedSize,
+        color: selectedColor,
+        price: price,
+        image: imageUrl // Assign the URL based on the selected color
+    };
+
+    cart.push(item);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+
+
+// JavaScript to handle the visibility of card details based on selected payment method
+const paymentMethodSelect = document.getElementById('payment-method');
+const cardDetailsSection = document.getElementById('card-details');
+
+paymentMethodSelect.addEventListener('change', function () {
+    const selectedPaymentMethod = paymentMethodSelect.value;
+
+    // Show card details section only if Visa or Mastercard is selected
+    if (selectedPaymentMethod === 'Visa' || selectedPaymentMethod === 'Mastercard') {
+        cardDetailsSection.style.display = 'block';
+    } else {
+        cardDetailsSection.style.display = 'none';
+    }
+});
+
+
+<!-- Inside your script.js -->
+function calculateTotal() {
+    // Logic to calculate the total amount
+    let totalAmount = 100; // Replace this with your total amount calculation
+
+    return totalAmount;
+}
+
+
+
+    </script>
+    </div>
+</div>
+</body>
+<a href="../cart/cart.html" class="view-cart">Go to Cart</a>
+
+</html>
+<footer>
+    <div class="footer-content">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../home/home.html"><img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Logo" width="100" height="100"></a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact">
+            <span class="contact-details">Customer Care: +1 (123) 456-7890</span>
+            <span class="separator">|</span>
+            <a href="mailto:blkenWear@gmail.com" class="contact-details">blkenWear@gmail.com</a>
+        </div>
+    </div>
+</footer>
+<script>
+    let prevScrollPos = window.pageYOffset;
+const footer = document.querySelector("footer");
+
+window.onscroll = function () {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos < currentScrollPos) {
+        // Scrolling down
+        footer.classList.remove("hidden-footer");
+    } else {
+        // Scrolling up
+        footer.classList.add("hidden-footer");
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+
+</script>
+</footer>

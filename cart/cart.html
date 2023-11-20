@@ -1,0 +1,1038 @@
+<!-- Based on Build a Modern Landing Page Website by Kevin Powell for Traversy Media (2020)
+see: https://www.youtube.com/watch?v=X1dz0xRbSJc -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="https://raw.githubusercontent.com/blkenWear/blkenWearlogo/main/390765600d563047b5ff2eea572cafc1-removebg-preview.png" type="image/png">
+
+    <title>Cart|blkenWear</title>
+  </head>
+  <header>
+      <nav>
+
+        <ul>
+            <li>
+        <a href="../home/home.html">Home</a>
+      </li>
+      <li>
+        <a href="../men/Men.html">Men</a>
+        <ul>
+          <li><a href="../men/menstshirt.html">T-Shirt</a></li>
+          <li><a href="../men/menshoodies.html">Hoodies</a></li>
+            <li><a href="../men/mensoversizedtshirt.html">Oversized T-shirt</a></li>
+            <li><a href="../men/Menspolotshirt.html">Polo T-shirt</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../women/Women.html">Women</a>
+        <ul>
+          <li><a href="../women/womenstshirt.html">T-Shirt</a></li>
+          <li><a href="../women/womenscrophoodies.html">Hoodies</a></li>
+            <li><a href="../women/womenscroptop.html">Crop Top</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="../boys/Boys.html">Boys</a>
+        <ul>
+          <li><a href="../boys/boystshirt.html">T-Shirt</a></li>
+          <li><a href="../boys/boystoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../girls/Girls.html">Girls</a>
+        <ul>
+          <li><a href="../girls/girlstshirt.html">T-Shirt</a></li>
+          <li><a href="../girls/girlstoddlertshirt.html">Toddler</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../newseller/newseller.html">New Sellers</a>
+          <ul>
+          <li><a href="../newseller/sneakers.html">Sneaker</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../cart/cart.html?id=product1">Cart</a>
+      </li>
+      <div class="slider"></div>
+    </ul>
+      </nav>
+      <a href="../home/home.html">
+        <img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Your Logo" width="100" height="100">
+    </a>
+    </header>
+<div class="product-hierarchy">
+  <a href="../home/home.html">Home</a>
+  <span>&gt;</span>
+      <a href="../cart/cart.html">Cart</a>
+</div>
+
+
+  <body>
+    <header class="hero">
+      <div class="container spacing">
+        <h1 class="primary-title">It's okay to add your cart a little EXTRA!!</h1>
+        <p>
+          Your dream items await in the cart! One click to checkout and make them yours. Happy shopping with BlkenWear!
+        </p>
+        <a href="#" class="btn">SHOP MORE!</a>
+      </div>
+    </header>
+    <style>
+    .product-hierarchy {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333; /* Change text color to a softer tone */
+  display: flex; /* Use flexbox for better layout control */
+  align-items: center; /* Vertically align items */
+
+  margin-left:20px;
+}
+
+.product-hierarchy a {
+  text-decoration: none;
+   color: #DCDCDC; /* Set the link color to white or any color you prefer */
+  text-transform: capitalize;
+  transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and font size changes */
+}
+
+.product-hierarchy a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  color: #FFFFFF; /* Darken the link color on hover */
+  font-size: 18px;
+}
+
+.product-hierarchy span {
+  margin: 0 5px;
+  color: #FFFFFF; /* Adjust the separator color to a darker tone */
+}
+
+
+
+
+
+                                       /* Navigation Bar Styles */
+html,
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1e272e;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+    }
+
+    ul {
+      position: relative;
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-right: 20px;
+      position: relative;
+    }
+
+    li:hover ul {
+      display: block;
+    }
+
+    ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      padding: 10px;
+    }
+
+    ul ul li {
+      width: 150px;
+      line-height: 25px;
+      margin-top:-10px;
+
+      margin-left:-25px;
+    }
+    ul ul li a {
+  color: #DCDCDC; /* Change to your preferred color for sub-items */
+  font-size: 12px;
+}
+ ul ul li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  color: #FFFFFF; /* Darken the link color on hover */
+  font-size: 18px;
+}
+    li {
+      list-style: none;
+      width: 120px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      margin-top: 50px;
+      transition: color 0.3s, font-size 0.3s;
+    }
+
+    header a img {
+      margin-top: -75px;
+    }
+
+    .slider {
+      width: 100px;
+      height: 40px;
+      background-color: #5352ed;
+      border-radius: 4px;
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      z-index: -1;
+      transition: all ease 0.4s;
+      animation: 2s ease-in-out waves infinite;
+    }
+
+    li:nth-child(1):hover ~ .slider {
+      left: 10px;
+    }
+
+    li:nth-child(2):hover ~ .slider {
+      left: 148px;
+    }
+
+    li:nth-child(3):hover ~ .slider {
+      left: 290px;
+    }
+
+    li:nth-child(4):hover ~ .slider {
+      left: 432px;
+    }
+
+    li:nth-child(5):hover ~ .slider {
+      left: 570px;
+    }
+
+    li:nth-child(6):hover ~ .slider {
+      left: 710px;
+    }
+
+    @keyframes waves {
+      from {
+        clip-path: polygon(
+          0% 17%,
+          9% 10%,
+          18% 4%,
+          30% 0%,
+          43% 1%,
+          49% 4%,
+          57% 7%,
+          66% 10%,
+          78% 11%,
+          89% 11%,
+          96% 9%,
+          100% 7%,
+          100% 100%,
+          0% 100%
+        );
+      }
+      50% {
+        clip-path: polygon(
+          0% 4%,
+          6% 9%,
+          13% 13%,
+          23% 15%,
+          31% 16%,
+          42% 15%,
+          49% 13%,
+          61% 10%,
+          71% 5%,
+          81% 3%,
+          90% 2%,
+          100% 5%,
+          100% 100%,
+          0% 100%
+        );
+      }
+      to {
+        clip-path: polygon(
+          0% 17%,
+          9% 10%,
+          18% 4%,
+          30% 0%,
+          43% 1%,
+          49% 4%,
+          57% 7%,
+          66% 10%,
+          78% 11%,
+          89% 11%,
+          96% 9%,
+          100% 7%,
+          100% 100%,
+          0% 100%
+        );
+      }
+    }
+
+
+
+
+
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* layout */
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 7rem 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.split > * {
+  flex-basis: 30%; /* 100% by default on small screens */
+  min-width: 15rem;
+}
+
+/* target any direct child of spacing */
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, #fff);
+  font-weight: 700;
+  background-color: var(--clr-accent, blue);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* hero section */
+
+.primary-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem); /* responsive font */
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 15rem 0;
+  color: white;
+  background: #222; /* fallback if blend mode is not supported */
+}
+
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background: url(https://github.com/kevin-powell/shoes/blob/master/img/shoe-3.png?raw=true),
+      radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/* featured section */
+
+.featured {
+  background: #eee;
+
+}
+
+.featured__item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+  transform: scale(0.85);
+  transition: transform 250ms ease-in-out;
+}
+
+.featured__item:hover,
+.featured__item:focus {
+  transform: scale(1);
+}
+
+/* circles */
+.featured__item::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 75% 75% 0 0; /* padding trick to get a circle */
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
+}
+
+.featured__details {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details {
+  opacity: 1;
+  text-shadow: 0 0 2rem white; /* to prevent overlapping */
+}
+
+.featured__details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* product section */
+
+.product {
+  background: radial-gradient(
+    var(--clr-inner, limegreen),
+    var(--clr-outer, purple)
+  );
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.product__title {
+  font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.product__image {
+  margin: -5rem 0 0 0;
+}
+
+@media (min-width: 45rem) {
+  .product {
+    text-align: left;
+    margin-bottom: 9rem;
+  }
+
+  .product__title {
+    margin: 0;
+  }
+
+  .product__image {
+    float: right;
+    width: 65%;
+    shape-outside: url(https://github.com/kevin-powell/shoes/blob/master/img/shoe-1.png?raw=true); /* text will wrap the shoe */
+    shape-margin: 1rem;
+    margin: 0 -5rem 0 0;
+  }
+
+  .product.shoe-left .product__image {
+    float: left;
+    shape-outside: url(https://github.com/kevin-powell/shoes/blob/master/img/shoe-2.png?raw=true);
+    margin: 0 0 0 -5em;
+    shape-margin: 2em;
+  }
+}
+
+/* customize CSS variables */
+.hero {
+  --clr-accent: #faa700;
+    z-index: -1;
+    margin-top:-60px;
+}
+
+.shoe-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.shoe-white {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
+
+
+
+
+
+      .product img {
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+
+      margin-bottom: 15px;
+      }
+
+#cart-items {
+  display: grid;
+  gap: 40px;
+  margin-top: 20px;
+  text-align: center;
+  color: #F5F5F5;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item {
+  width: 100%; /* Ensure each item takes up 100% width within the grid cell */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  padding: 15px;
+  color: #F5F5F5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the number of columns based on screen width */
+@media (min-width: 768px) {
+  #cart-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  #cart-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Center a single item explicitly */
+@media (max-width: 767px) {
+  #cart-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+      .cart-items {
+
+      padding: 15px;
+color: #F5F5F5;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      }
+
+
+
+      .cart-item img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+color: #F5F5F5;
+      margin-bottom: 10px;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+      }
+      .cart-item h3 {
+      margin: 10px 0;
+      color: #F5F5F5;
+
+      }
+      .cart-item p {
+      margin: 5px 0;
+      color: #F5F5F5;
+      text-transform: uppercase;
+      }
+      .cart-item button {
+      padding: 8px 15px;
+      background-color: #ff5a5f;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .cart-item button:hover {
+      background-color: #F5F5F5;
+      }
+      /* Total div styles */
+
+      #total {
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      background-color: #4CAF50;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto; /* Center the total div horizontally */
+      display: inline-block;
+      }
+      /* Place Order button styling */
+      #place-order-btn {
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      background-color: #4CAF50;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto; /* Center the total div horizontally */
+      display: inline-block;
+      }
+      #place-order-btn:hover {
+      background-color: #45a049;
+      }
+      /* Order Details styling */
+      #order-details {
+      display: none;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      }
+      #order-details h2 {
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 8px;
+      text-align: center;
+      }
+      #order-details label {
+      font-weight: bold;
+      display: block;
+      margin: 6px 0;
+      font-size: 14px;
+      }
+      #order-details input,
+      #order-details select {
+      width: calc(100% - 12px);
+      padding: 6px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      }
+      /* Confirm Order button styling */
+      #confirm-order-btn {
+      padding: 10px 20px;
+      background-color: #ff5a5f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin: 10px auto;
+      display: block;
+      }
+      #confirm-order-btn:hover {
+      background-color: #d93134;
+      }
+      /* Success Celebration styling */
+      #success-celebration {
+      display: none;
+      text-align: center;
+      margin: 30px auto;
+      padding: 16px;
+      width: 80%;
+      max-width: 400px;
+      border: 2px dashed #4CAF50;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      }
+      #success-celebration h2 {
+      color: #4CAF50;
+      font-size: 20px;
+      margin-bottom: 16px;
+      text-align: center;
+      }
+      #qr-code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #fff;
+      }
+      /* Styling the button to generate the QR code */
+      button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      }
+      button:hover {
+      background-color: #45a049;
+      }
+      .image-section {
+      background-color: #333; /* Background color for the image section */
+      color: white; /* Text color for the image section */
+      padding: 20px; /* Add padding if needed */
+      }
+      .cart-section {
+      text-align: center;
+color: #F5F5F5;
+
+      }
+      .page-container {
+      text-align: center;
+      }
+
+
+
+
+/* Add the following styles to center the cart items */
+.cart-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 700px; /* Set a maximum width for better readability */
+color: #F5F5F5;
+}
+body {
+    padding-bottom: 60px; /* Adjust the padding as needed to create space above the footer */
+    background-color: #1e272e;
+}
+/* Footer styles */
+      footer {
+         background-color: #333;
+         color: #fff;
+         padding: 10px 0;
+         width: 100%;
+         position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom */
+    height: 80px;
+    margin-top:50px;
+
+      }
+
+      .footer-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+
+      .logo img {
+         width: 100px;
+         height: auto;
+
+      }
+
+      .contact {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .contact-details {
+         color: #fff;
+         text-decoration: none;
+         font-size: 16px;
+      }
+
+      .separator {
+         color: #fff;
+         font-size: 16px;
+      }
+.hidden-footer {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+    </style>
+    <main>
+      <section class="featured">
+        <div class="container">
+          <h2 class="section-title">Featured Collections</h2>
+          <div class="split">
+            <a href="../men/menshoodies.html" class="featured__item">
+              <img
+                src="https://raw.githubusercontent.com/blkenWear/cart_images/main/30fc788908ad3ea3b96154fbf6fdb4e1-removebg-preview.png"  ;
+                alt=""
+                class="featured__img"
+              />
+              <p class="featured__details">
+                <span class="price">$29.09</span>MEN'S HOODIES
+              </p>
+            </a>
+            <a href="../women/womenscrophoodies.html" class="featured__item">
+              <img
+                src="https://raw.githubusercontent.com/blkenWear/cart_images/main/kevins-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <p class="featured__details">
+                <span class="price">$19.99</span>WOMEN'S HOODIES
+              </p>
+            </a>
+            <a href="../girls/girlstshirt.html" class="featured__item">
+              <img
+                src="https://raw.githubusercontent.com/blkenWear/cart_images/main/download__6_-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <p class="featured__details">
+                <span class="price">$19.99</span>GIRL'S T-SHIRT
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+         <div class="page-container">
+      <div class="cart-section">
+          <div id="targetSection">
+          </div>
+      <h1>Cart</h1>
+      <div id="cart-items">
+
+
+         <!-- Cart items will be displayed here -->
+      </div>
+
+      <div id="total">Total: $0.00</div>
+
+      <!-- Button to place order -->
+            <button id="place-order-btn" onclick="openOrderDetails()">Place Order</button>
+
+            <!-- Order details box (Initially hidden) -->
+
+        </div>
+    </div>
+      <!-- Address and personal details box (Initially hidden) -->
+      <div id="order-details" style="display: none;">
+         <h2>Enter Your Details</h2>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name"><br><br>
+         <label for="address">Address:</label>
+         <input type="text" id="address" name="address"><br><br>
+         <label for="contact">Contact Number:</label>
+         <input type="text" id="contact" name="contact"><br><br>
+          <h1>Payment</h1>
+          <head>
+              <title>QR Code Generator</title>
+              <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+          </head>
+          <body>
+          <div>
+              <button onclick="generateQRCode()">Generate QR Code</button>
+          </div>
+          <div id="qr-code"></div>
+          <script>
+                  function generateQRCode() {
+                      const totalAmount = document.getElementById('total').textContent.split('$')[1].trim();
+                      const qrText = 'Total Amount: $' + totalAmount;
+                      const qrCodeContainer = document.getElementById('qr-code');
+                      qrCodeContainer.innerHTML = '';
+
+                      const qr = new QRCode(qrCodeContainer, {
+                          text: qrText,
+                          width: 128,
+                          height: 128,
+                      });
+                  }
+               </script>
+          <form id="payment-form">
+              <label for="payment-method">Select Payment Method:</label>
+              <select id="payment-method">
+                  <option value="visa">COD</option>
+                  <option value="visa">Gpay</option>
+                  <option value="Mastercard">Mastercard</option>
+                  <option value="PayPal">PayPal</option>
+                  <!-- Add more payment options as needed -->
+              </select>
+              <div id="card-details" style="display: none;">
+                  <label for="card-number">Card Number:</label>
+                  <input type="text" id="card-number">
+                  <label for="expiry-date">Expiry Date:</label>
+                  <input type="text" id="expiry-date">
+                  <label for="issued-date">Issued Date:</label>
+                  <input type="text" id="issued-date">
+                  <label for="cvv">CVV:</label>
+                  <input type="text" id="cvv">
+                  <label for="cardholder-name">Cardholder Name:</label>
+                  <input type="text" id="cardholder-name">
+              </div>
+          </form>
+          <script src="script.js"></script>
+             <button id="confirm-order-btn" onclick="confirmOrder()">Confirm Order</button>
+          </body>
+      </div>
+      </div>
+   </div>
+   <!-- Confirm order button -->
+
+   </div>
+   <!-- Celebration on successful order placement (Initially hidden) -->
+   <div id="success-celebration" style="display: none;">
+   <h2>Successfully Placed Order!</h2>
+   <!-- Confetti, thank you message, or any other celebratory content -->
+   </div>
+   <script src="script.js"></script>
+   <script>
+      // Function to open order details
+      function openOrderDetails() {
+          document.getElementById("order-details").style.display = "block";
+      }
+
+      // Function to confirm order
+      function confirmOrder() {
+          // Logic to confirm order and display success celebration
+          document.getElementById("order-details").style.display = "none"; // Hide order details after confirmation
+          document.getElementById("success-celebration").style.display = "block"; // Display success celebration
+      }
+   </script>
+      </div>
+      </div>
+   </body>
+</html>
+      <section class="our-products">
+        <div class="container">
+          <h2 style="color: #F5F5F5;" class="section-title">Our sneakers</h2>
+          <article class="product shoe-red spacing">
+            <img
+              src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-1.png?raw=true"
+              alt=""
+              class="product__image"
+            />
+            <h3 class="product__title">The Top-rated One</h3>
+            <p class="product__description">
+              Discover the epitome of excellence with our top-rated product, seamlessly
+                combining innovation and quality for an unparalleled experience that exceeds expectations!
+            </p>
+            <a href="../newseller/sneakers.html" class="btn">Buy now</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<footer>
+    <div class="footer-content">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="home.html"><img src="https://github.com/blkenWear/blkenWearlogo/raw/main/blkenWear.png" alt="Logo" width="100" height="100"></a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact">
+            <span class="contact-details">Customer Care: +1 (123) 456-7890</span>
+            <span class="separator">|</span>
+            <a href="mailto:blkenWear@gmail.com" class="contact-details">blkenWear@gmail.com</a>
+        </div>
+    </div>
+</footer>
+<script>
+    let prevScrollPos = window.pageYOffset;
+const footer = document.querySelector("footer");
+
+window.onscroll = function () {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos < currentScrollPos) {
+        // Scrolling down
+        footer.classList.remove("hidden-footer");
+    } else {
+        // Scrolling up
+        footer.classList.add("hidden-footer");
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+
+</script>
+</footer>

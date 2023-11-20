@@ -1,0 +1,900 @@
+                                       /* Navigation Bar Styles */
+html,
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1e272e;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+    }
+
+    ul {
+      position: relative;
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+        z-index: 2;
+    }
+
+    li {
+      margin-right: 20px;
+      position: relative;
+    }
+
+    li:hover ul {
+      display: block;
+    }
+
+    ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      padding: 10px;
+    }
+
+    ul ul li {
+      width: 150px;
+      line-height: 25px;
+      margin-top:-10px;
+
+      margin-left:-25px;
+    }
+    ul ul li a {
+  color: #DCDCDC; /* Change to your preferred color for sub-items */
+  font-size: 12px;
+  z-index: 2;
+}
+ ul ul li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  color: #FFFFFF; /* Darken the link color on hover */
+  font-size: 18px;
+
+}
+    li {
+      list-style: none;
+      width: 120px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      margin-top: 50px;
+      transition: color 0.3s, font-size 0.3s;
+    }
+
+    header a img {
+      margin-top: -75px;
+    }
+
+    .slider {
+      width: 100px;
+      height: 40px;
+      background-color: #5352ed;
+      border-radius: 4px;
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      z-index: -2;
+      transition: all ease 0.4s;
+      animation: 2s ease-in-out waves infinite;
+    }
+
+    li:nth-child(1):hover ~ .slider {
+      left: 10px;
+    }
+
+    li:nth-child(2):hover ~ .slider {
+      left: 148px;
+    }
+
+    li:nth-child(3):hover ~ .slider {
+      left: 290px;
+    }
+
+    li:nth-child(4):hover ~ .slider {
+      left: 432px;
+    }
+
+    li:nth-child(5):hover ~ .slider {
+      left: 570px;
+    }
+
+    li:nth-child(6):hover ~ .slider {
+      left: 710px;
+    }
+
+    @keyframes waves {
+      from {
+        clip-path: polygon(
+          0% 17%,
+          9% 10%,
+          18% 4%,
+          30% 0%,
+          43% 1%,
+          49% 4%,
+          57% 7%,
+          66% 10%,
+          78% 11%,
+          89% 11%,
+          96% 9%,
+          100% 7%,
+          100% 100%,
+          0% 100%
+        );
+      }
+      50% {
+        clip-path: polygon(
+          0% 4%,
+          6% 9%,
+          13% 13%,
+          23% 15%,
+          31% 16%,
+          42% 15%,
+          49% 13%,
+          61% 10%,
+          71% 5%,
+          81% 3%,
+          90% 2%,
+          100% 5%,
+          100% 100%,
+          0% 100%
+        );
+      }
+      to {
+        clip-path: polygon(
+          0% 17%,
+          9% 10%,
+          18% 4%,
+          30% 0%,
+          43% 1%,
+          49% 4%,
+          57% 7%,
+          66% 10%,
+          78% 11%,
+          89% 11%,
+          96% 9%,
+          100% 7%,
+          100% 100%,
+          0% 100%
+        );
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@Programith
+
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+
+}
+
+
+.slide-container {
+
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    margin-top:-20px;
+    justify-content: center;
+    align-items: center;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+}
+
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+        justify-content: center;
+    align-items: center;
+     display: flex;
+      justify-content: center;
+
+}
+.wrapper:focus {
+    outline: 0;
+
+}
+
+.clash-card {
+    background: white;
+    width: 560px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+
+}
+
+.clash-card__image {
+    position: relative;
+    height: 230px;
+    margin-bottom: 35px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 14px;
+}
+
+.clash-card__image--barbarian {
+    background: url("https://i.pinimg.com/564x/c5/aa/9f/c5aa9fae7ec7e2af49c08fc2a3dda686.jpg");
+
+}
+.clash-card__image--barbarian img {
+    width: 400px;
+    position: absolute;
+    top: -35px;
+    left:90px;
+
+}
+
+.clash-card__image--archer {
+    background: url("https://i.pinimg.com/564x/ad/a3/86/ada386294413988e1ca436818be52324.jpg");
+
+}
+.clash-card__image--archer img {
+    width: 400px;
+    position: absolute;
+    top: -35px;
+    left:90px;
+}
+
+.clash-card__image--giant {
+    background: url("https://i.pinimg.com/564x/26/e7/51/26e751a2737318a6adc3bceee2660910.jpg");
+}
+.clash-card__image--giant img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+}
+
+.clash-card__image--goblin {
+    background: url("https://i.pinimg.com/564x/a3/ad/13/a3ad1393772f2771a09b46004b8f0236.jpg");
+}
+.clash-card__image--goblin img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+}
+
+.clash-card__image--wizard {
+    background: url("https://raw.githubusercontent.com/blkenWear/girls_toddler_tshirts_design-/main/Download%20premium%20image%20of%20Cherry%20blossom%20branch%20with%20shimmer%20background%20illustration%20by%20Baifern%20about%20frame%2C%20cherry%20blossom%20gold%20frame%2C%20cherry%20blossom%2C%20iphone%20wallpaper%20background%20cherry%2C%20and%20aesthetic%20background%202.jpg");
+}
+.clash-card__image--wizard img {
+    width: 300px;
+    position: absolute;
+    top: -2px;
+    left: 280px;
+}
+
+.clash-card__level {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+    color: #ec9b3b;
+}
+
+.clash-card__level--archer {
+    color: #ee5487;
+}
+
+.clash-card__level--giant {
+    color: #f6901a;
+}
+
+.clash-card__level--goblin {
+    color: #82bb30;
+}
+
+.clash-card__level--wizard {
+    color: #4facff;
+}
+
+.clash-card__unit-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+    background: #ec9b3b;
+}
+.clash-card__unit-stats--barbarian .one-third {
+    border-right: 1px solid #bd7c2f;
+}
+
+.clash-card__unit-stats--archer {
+    background: #ee5487;
+}
+.clash-card__unit-stats--archer .one-third {
+    border-right: 1px solid #d04976;
+}
+
+.clash-card__unit-stats--giant {
+    background: #f6901a;
+}
+.clash-card__unit-stats--giant .one-third {
+    border-right: 1px solid #de7b09;
+}
+
+.clash-card__unit-stats--goblin {
+    background: #82bb30;
+}
+.clash-card__unit-stats--goblin .one-third {
+    border-right: 1px solid #71a32a;
+}
+
+.clash-card__unit-stats--wizard {
+    background: #4facff;
+}
+.clash-card__unit-stats--wizard .one-third {
+    border-right: 1px solid #309eff;
+}
+
+.clash-card__unit-stats {
+    color: white;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.clash-card__unit-stats .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+}
+.clash-card__unit-stats sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+}
+.clash-card__unit-stats .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.clash-card__unit-stats .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.clash-card__unit-stats .no-border {
+    border-right: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+
+}
+
+.slick-prev {
+    left: 2%; /* Adjust as needed */
+    z-index: 999;
+    position: absolute;
+}
+
+.slick-next {
+    right: 2%; /* Adjust as needed */
+    z-index: 999;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding-bottom: 60px; /* Adjust the padding as needed to create space above the footer */
+    background-color: #1e272e;
+}
+/* Footer styles */
+      footer {
+         background-color: #333;
+         color: #fff;
+         padding: 10px 0;
+         width: 100%;
+         position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom */
+    height: 80px;
+
+      }
+
+      .footer-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+
+      .logo img {
+         width: 100px;
+         height: auto;
+      }
+
+      .contact {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .contact-details {
+         color: #fff;
+         text-decoration: none;
+         font-size: 16px;
+      }
+
+      .separator {
+         color: #fff;
+         font-size: 16px;
+      }
+.hidden-footer {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@Programith
+
+*/
+
+@import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+
+body1 {
+position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    transition: 0.25s;
+    color: #9e9e9e;
+    margin-top:-100px;
+
+}
+body1 .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 600px;
+    max-width: 900px;
+    width: calc(100% - 100px);
+    height: 400px;
+}
+
+body1 .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+}
+
+.option:nth-child(1) {
+    --defaultBackground: #ed5565;
+}
+.option:nth-child(2) {
+    --defaultBackground: #fc6e51;
+}
+.option:nth-child(3) {
+    --defaultBackground: #ffce54;
+}
+.option:nth-child(4) {
+    --defaultBackground: #2ecc71;
+}
+.option:nth-child(5) {
+    --defaultBackground: #5d9cec;
+}
+.option:nth-child(6) {
+    --defaultBackground: #ac92ec;
+}
+
+.option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+}
+
+.option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+.option.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+}
+.option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+.option:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 0;
+}
+ .sub a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Set your initial font size */
+    transition: font-size 0.2s ease; /* Adjust the duration for a slower increase */
+  }
+
+  .sub a:hover {
+    font-size: 18px; /* Set the font size you want on hover */
+  }
+.label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--defaultBackground);
+
+}
+.icon img {
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+/* Basic styling for the one-third container */
+.one-third {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for the stat value */
+.stat-value {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Add a cursor to indicate interactivity */
+    transition: text-decoration 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+/* Hover effect for the link */
+.stat-value:hover {
+    text-decoration: underline;
+    /* Adjust other styles if needed, but avoid changing padding or margins */
+}
+
+/* Styling for the stat number */
+.stat {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Basic styling for the one-third container */
+/* Basic styling for the one-third container */
+.one-third {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for the stat value */
+.stat-value {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Add a cursor to indicate interactivity */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+
+/* Hover effect for the link */
+.stat-value:hover {
+    transform: translateY(-5px);
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 18px; /* Increase font size on hover */
+    /* Add more styling for the hover effect if needed */
+}
+
+/* Styling for the stat number */
+.stat {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.stat-value-explore {
+    transform: translateY(-5px);
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 18px; /* Increase font size on hover */
+    color: #ff0000; /* Replace #ff0000 with your desired color code */
+
+    /* Add more styling for the hover effect if needed */
+}
+/* Hover effect for the link */
+.stat-value-explore:hover {
+    transform: translateY(-5px);
+    text-decoration: none; /* Remove underline on hover */
+    font-size: 20px; /* Increase font size on hover */
+    /* Add more styling for the hover effect if needed */
+}
+
+.stat-value-explore {
+    display: block;
+
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Add a cursor to indicate interactivity */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --hover-width: 75%;
+  --minimize-width: 25%;
+  --transition-speed: 1s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  color: #fff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  border: #fff solid 0.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+  margin-top:100px;
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-btn-hover-color);
+  border-color: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+  background-color: var(--right-btn-hover-color);
+  border-color: var(--right-btn-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  height:500px;
+  margin-top:-35px;
+
+
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("https://i.pinimg.com/564x/8c/18/bf/8c18bf61c8838bbd2234b97760898d81.jpg")
+    no-repeat center / cover;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url("https://i.pinimg.com/564x/7b/a4/3d/7ba43d25c5b0c2c85ba1e50813361d57.jpg")
+    no-repeat center / cover;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.split.left,
+.split.right,
+.split.left::before,
+.split.right::before {
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--minimize-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--minimize-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
